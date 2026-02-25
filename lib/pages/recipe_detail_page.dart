@@ -139,6 +139,7 @@ class _IngredientChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final emoji = AppIngredients.emojiOf(label);
     return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.md,
@@ -149,9 +150,20 @@ class _IngredientChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadius.chip),
         border: Border.all(color: AppColors.primary, width: 1.5),
       ),
-      child: Text(
-        label,
-        style: AppTextStyles.labelMedium.copyWith(color: AppColors.primaryDark),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (emoji.isNotEmpty) ...[
+            Text(emoji, style: const TextStyle(fontSize: 13)),
+            const SizedBox(width: AppSpacing.xs),
+          ],
+          Text(
+            label,
+            style: AppTextStyles.labelMedium.copyWith(
+              color: AppColors.primaryDark,
+            ),
+          ),
+        ],
       ),
     );
   }

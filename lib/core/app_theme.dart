@@ -162,6 +162,46 @@ class AppRadius {
 }
 
 // ─────────────────────────────────────────────
+//  MAPA DE INGREDIENTES (nome → emoji)
+//  Fonte da verdade única — usada em todas as telas.
+// ─────────────────────────────────────────────
+class AppIngredients {
+  AppIngredients._();
+
+  static const Map<String, String> emojiMap = {
+    'Lanches': '🥪',
+    'Queijo': '🧀',
+    'Pepino': '🥒',
+    'Abacate': '🥑',
+    'Brócolis': '🥦',
+    'Coco': '🥥',
+    'Cenoura': '🥕',
+    'Tomate': '🍅',
+    'Mel': '🍯',
+    'Morango': '🍓',
+    'Melancia': '🍉',
+    'Maça': '🍎',
+    'Berinjela': '🍆',
+    'Panqueca': '🥞',
+    'Alho': '🧄',
+    'Tangerina': '🍊',
+    'Banana': '🍌',
+    'Ovos': '🥚',
+    'Bacon': '🥓',
+    'Verduras': '🥬',
+    'Massa': '🍝',
+    'Batata': '🥔',
+    'Milho': '🌽',
+    'Kiwi': '🥝',
+    'Carne': '🥩',
+    'Cebola': '🧅',
+  };
+
+  /// Retorna o emoji do ingrediente, ou '' se não encontrado.
+  static String emojiOf(String name) => emojiMap[name] ?? '';
+}
+
+// ─────────────────────────────────────────────
 //  TEMA GLOBAL (ThemeData)
 // ─────────────────────────────────────────────
 class AppTheme {
