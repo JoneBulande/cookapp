@@ -29,7 +29,7 @@
 ## 🔧 Como executar
 
 ```bash
-git clone https://github.com/seu-usuario/cookapp.git
+git clone https://github.com/JoneBulande/cookapp.git
 cd cookapp
 flutter pub get
 flutter run
