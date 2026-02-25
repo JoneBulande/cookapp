@@ -1,16 +1,49 @@
-# cookapp
+# 🍎 cookapp — App de Receitas em Flutter
 
-A new Flutter project.
+<p align="center">
+  <img alt="cookapp mockup" src="./assets/images/mockup.png" width="100%">
+</p>
 
-## Getting Started
+**cookapp** é um app mobile de receitas onde o utilizador seleciona os ingredientes que tem em casa e descobre receitas que pode preparar com eles.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Seleção de ingredientes por chips interativos
+- Filtro de receitas baseado nos ingredientes escolhidos
+- Grid de receitas com imagem, nome e tempo de preparo
+- Detalhe da receita com lista de ingredientes e modo de preparo
+- Animações e microinterações nativas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Tecnologias
+
+- **Flutter** + **Dart**
+- **google_fonts** — tipografia DM Sans
+- Material Design 3
+
+---
+
+## 🔧 Como executar
+
+```bash
+git clone https://github.com/seu-usuario/cookapp.git
+cd cookapp
+flutter pub get
+flutter run
+```
+
+---
+
+## 🎨 Design
+
+O design original deste app foi criado pela **[Rocketseat](https://rocketseat.com.br)** e desenvolvido em **React Native**.  
+Como desafio pessoal, decidi recriar o app completamente do zero em **Flutter**, sem seguir nenhum tutorial ou código de base — apenas o design como referência.
+
+---
+
+## 👨‍💻 Autor
+
+Feito com 💚 por [Jone Bulande](https://github.com/JoneBulande)
